@@ -44,7 +44,7 @@ body {
 	flex-direction: column;
 }
 .container {
-	max-width: 1170px;
+	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0px auto;
 }
@@ -73,8 +73,6 @@ body {
 	height: 40px;
 }
 .social-header__container {
-	max-width: 1170px;
-	margin: 0px -15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
