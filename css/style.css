@@ -93,19 +93,6 @@ html,body {
 .nav__list:not(:last-child) {
 	margin: 0px 20px 0px 0px;
 }
-@media (max-width: 1194px) {
-	.menu__nav {
-		margin: 0px 0px 0px 20px;
-	}
-}
-@media (max-width: 1022px) {
-	.menu__nav {
-		flex-wrap: wrap;
-	}
-	.callus__phone {
-		font-size: 12px;
-	}
-}
 .nav__item {
 	font-size: 14px;
 	color: #000;
@@ -136,4 +123,34 @@ html,body {
 	font-size: 16px;
 	line-height: 112.5%;
 	color: #000;
+}
+@media (max-width: 1194px) {
+	.menu__nav {
+		margin: 0px 0px 0px 20px;
+	}
+}
+@media (max-width: 1022px) {
+	.menu__nav {
+		flex-wrap: wrap;
+	}
+	.callus__phone {
+		font-size: 12px;
+	}
+	.menu__callus {
+	margin: 0px 0px 0px 20px;
+	}
+}
+@media (max-width: 648px) {
+	.menu__container {
+	flex-wrap: wrap;
+	}
+	.menu__logo {
+	margin: 0px 0px 20px 0px;
+	}
+	.menu__nav {
+	margin: 0px 0px 20px 0px;
+	}
+	.menu__callus {
+	margin: 0px;
+	}
 }
