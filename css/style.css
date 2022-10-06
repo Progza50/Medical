@@ -1,4 +1,4 @@
-/* Обнуление */
+/* -------------Обнуление---------------- */
 *,*::before,*::after {
 	padding: 0;
 	margin: 0;
@@ -40,9 +40,8 @@ html,body {
 	box-sizing: content-box;
 }
 
-/* HEADER */
+/* -------------------HEADER---------------------- */
 .header {
-	position: absolute;
 	width: 100%;
 	z-index: 50;
 }
@@ -79,7 +78,7 @@ html,body {
 }
 .menu__container {
 	display: flex;
-	height: 120px;
+	min-height: 120px;
 	align-items: center;
 }
 .menu__logo {
@@ -145,12 +144,49 @@ html,body {
 	flex-wrap: wrap;
 	}
 	.menu__logo {
-	margin: 0px 0px 20px 0px;
+	margin: 20px 0px;
 	}
 	.menu__nav {
 	margin: 0px 0px 20px 0px;
 	}
 	.menu__callus {
-	margin: 0px;
+	margin: 0px 0px 20px;
 	}
+}
+
+/* -------------------MAIN-------------------- */
+.main {
+	display: flex;
+	height: 645px;
+	width: 100%;
+	background: url("../img/main/1.jpg") no-repeat left top;
+}
+.main__container {
+	display: flex;
+	align-items: center;
+	max-width: ;
+}
+.prev {
+	position: relative;
+	left: 5%;
+	height: 35px;
+	width: 19px;
+}
+.main__body {
+	width: 540px;
+	margin: 0px 0px 0px 585px;
+}
+.main__over {
+}
+.main__title {
+}
+.main__text {
+}
+.reachus {
+}
+.next {
+	position: relative;
+	right: 5%;
+	height: 35px;
+	width: 19px;
 }
