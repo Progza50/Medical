@@ -34,10 +34,9 @@ html,body {
 	flex-direction: column;
 }
 .container {
-	max-width: 1200px;
+	width: 70,69%;
 	padding: 0 15px;
 	margin: 0px auto;
-	box-sizing: content-box;
 }
 
 /* -------------------HEADER---------------------- */
@@ -69,8 +68,8 @@ html,body {
 }
 .email {
 	font-size: 12px;
+	line-height: 14px;
 	color: #fff;
-	line-height: 116.667%;
 }
 .header__menu {
 }
@@ -164,7 +163,6 @@ html,body {
 .main__container {
 	display: flex;
 	align-items: center;
-	max-width: ;
 }
 .prev {
 	position: relative;
