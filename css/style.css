@@ -491,6 +491,7 @@ html,body {
 .benefits__right {
 	width: 46.11%;
 	padding: 0px 0px 0px 65px;
+	background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
 }
 .benefits__title {
 	font-weight: 700;
@@ -576,4 +577,116 @@ html,body {
 	.benefits__buttons {
 		width: 100%;
 	}
+}
+
+/*----------------SERVICES----------------*/
+.services {
+	height: 670px;
+	margin: 130px 0px;
+}
+.services__container {
+	display: flex;
+	height: 100%;
+}
+.services__left {
+	display: flex;
+	flex-direction: column;
+	height: 670px;
+	width: 50%;
+}
+.services__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 37px;
+}
+.services__subtitle {
+	font-size: 24px;
+	line-height: 28px;	
+	color: #9B9B9B;
+	margin: 9px 0px 0px;
+}
+.services__coding {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 67px 0px 0px;
+}
+.coding__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+}
+.coding__icon {
+	width: 18px;
+	height: 4px;
+}
+.line {
+	content: "";
+	width: 100%;
+	border-top: 1px solid #979797;
+	margin: 25px 0px 0px;
+}
+/* .services__coding::after {
+   content: "";
+	width: 100%;
+	border-top: 1px solid #979797;
+} */
+.coding__content {
+	display: flex;
+	margin: 32px 0px 0px;
+}
+.coding__img {
+	width: 160px;
+	height: 160px;
+}
+.coding__body {
+	margin: 12px 0px 0px 20px;
+}
+.coding__text {
+	font-size: 16px;
+	line-height: 181%;
+}
+.coding__more {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 242%;
+	color: #7D7D7D;
+	background: inherit;
+	margin: 1px 0px 0px 0px;
+}
+.coding__more:hover {
+	cursor: grab;
+}
+.services__credentialing {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 42px 0px 0px;
+}
+.credentialing__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+}
+.credentialing__icon {
+	width: 18px;
+	height: 18px;
+}
+.services__management {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 31px 0px 0px;
+}
+.management__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+}
+.management__icon {
+	width: 18px;
+	height: 18px;
 }
