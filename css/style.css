@@ -167,14 +167,22 @@ html,body {
 	width: 80%;
 	align-items: center;
 }
-.prev {
+.main__left {
 	width: 10%;
-	padding: 0px 0px 0px 10%;
+	position: relative;
+}
+.prev {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	height: 35px;
 	width: 19px;
 	background: transparent;
 }
 .prev img {
+	position: absolute;
+	right: 0px;
 }
 .main__body {
 	width: 39.42%;
@@ -218,21 +226,30 @@ html,body {
 .reachus:active {
 	background: #810e14;
 }
-.next {
+.main__right {
 	width: 10%;
-	padding: 0px 10% 0px 0px;
+}
+.main__right {
+	width: 10%;
+	position: relative;
+}
+.next {
 	height: 35px;
 	width: 19px;
 	background: transparent;
 }
-@media (max-width: 1140px) {
+.next img {
+	position: absolute;
+	left: 0px;
+}
+@media (max-width: 1380px) {
 	.main__body {
-		margin: 0px 0px 0px 20%;
+		margin: 0px 0px 0px 25%;
 	}
 }
 @media (max-width: 1000px) {
 	.main__body {
-		margin: 0px 0px 0px 10%;
+		margin: 0px 0px 0px 15%;
 	}
 }
 @media (max-width: 850px) {
@@ -259,7 +276,7 @@ html,body {
 .we__container {
 	display: flex;
 	flex: 1 1 auto;
-	padding: 85px 0px 0px;
+	padding: 85px 0px 135px 0px;
 }
 .we__left {
 	width: 65.5%;
@@ -277,6 +294,8 @@ html,body {
 	max-width: 100%;
 }
 .we__left_text {
+	margin: 39px 0px 0px;
+	line-height: 181%;
 }
 .we__right {
 	margin: 0px 0px 0px 45px;
@@ -291,40 +310,176 @@ html,body {
 	padding: 55px 0px 0px;
 }
 .we__right_dependable {
+	background: linear-gradient(180deg, #F8F8F8 0%, #F7F7F7 100%);
 }
 .dependable {
 }
 .dependable__top {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 .dependable__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+	padding: 45px 0px 0px 37px;
 }
 .dependable__icon {
+	width: 33px;
+	height: 35px;
+	position: absolute;
+	top: 40px;
+	right: 18px;
 }
 .dependable__text {
+	line-height: 156%;
+	padding: 17px 29px 0px 37px;
 }
 .more {
+	margin: 20px 0px 32px 37px;
+	background: inherit;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 242%;
+	color: #7D7D7D;
+}
+.more:hover {
+	cursor: grab;
 }
 .we__right_open {
+	background: linear-gradient(180deg, #F3F3F3 2.58%, #F3F3F3 100%);
 }
 .open {
 }
 .open__top {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 .open__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+	padding: 45px 0px 0px 37px;
 }
 .open__icon {
+	width: 33px;
+	height: 35px;
+	position: absolute;
+	top: 40px;
+	right: 18px;
 }
 .open__text {
+	line-height: 156%;
+	padding: 17px 29px 0px 37px;
 }
 .we__right_connected {
+	background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%);
 }
 .connected {
 }
 .connected__top {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 .connected__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+	padding: 45px 0px 0px 37px;
 }
 .connected__icon {
+	width: 33px;
+	height: 35px;
+	position: absolute;
+	top: 40px;
+	right: 18px;
 }
 .connected__text {
+	line-height: 156%;
+	padding: 17px 29px 0px 37px;
+}
+@media (max-width: 1447px) {
+	.we__container {
+	flex-wrap: wrap;
+	}
+	.we__left {
+		width: 100%;
+	}
+	.we__right {
+		width: 100%;
+		padding: 85px 0px 0px;
+		margin: 0px;
+	}
+}
+
+/*-----------------BENEFITS-----------------*/
+.benefits {
+	height: 504px;
+	background: url(../img/benefits/1.png) no-repeat left top;
+	overflow: hidden;
+	background-size: 52.73%;
+}
+.benefits__container {
+	display: flex;
+	height: 100%;
+}
+.benefits__left {
+	display: flex;
+	height: 504px;
+	width: 53.89%;
+	align-items: center;
+	justify-content: end;
+}
+.benefits__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	width: 75.12%;
+	height: 65.67%;
+}
+.fhysicians {
+	width: 100%;
+	height: 96px;
+	background: rgba(255, 255, 255, 0.9);
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 25px;
+	padding: 0px 10px 0px 34px;
+	text-align: left;
+}
+.companies {
+	width: 100%;
+	height: 96px;
+	background: #0E77AF;
+	mix-blend-mode: normal;
+	opacity: 0.9;
+	margin: 21px 0px 0px 0px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 25px;
+	color: #FFFFFF;
+	padding: 0px 10px 0px 34px;
+	text-align: left;
+}
+.control {
+	width: 100%;
+	height: 96px;
+	background: #0E77AF;
+	mix-blend-mode: normal;
+	opacity: 0.9;
+	margin: 21px 0px 0px 0px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 25px;
+	color: #FFFFFF;
+	padding: 0px 10px 0px 34px;
+	text-align: left;
+}
+.benefits__right {
+	width: 46.11%;
 }
