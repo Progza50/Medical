@@ -38,6 +38,17 @@ html,body {
 	padding: 0 15px;
 	margin: 0px auto;
 }
+h2 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 37px;
+}
+h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #0E77AF;
+}
 
 /* -------------------HEADER---------------------- */
 .header {
@@ -282,10 +293,7 @@ html,body {
 	width: 65.5%;
 	flex-shrink: 0;
 }
-.we__left_title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 37px;
+.we__title {
 }
 .we__left_img {
 	padding: 55px 0px 0px;
@@ -301,11 +309,6 @@ html,body {
 	margin: 0px 0px 0px 45px;
 	width: 34.5%;
 }
-.we__right_title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 37px;
-}
 .we__right_body {
 	padding: 55px 0px 0px;
 }
@@ -320,10 +323,6 @@ html,body {
 	position: relative;
 }
 .dependable__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 	padding: 45px 0px 0px 37px;
 }
 .dependable__icon {
@@ -359,10 +358,6 @@ html,body {
 	position: relative;
 }
 .open__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 	padding: 45px 0px 0px 37px;
 }
 .open__icon {
@@ -387,10 +382,6 @@ html,body {
 	position: relative;
 }
 .connected__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 	padding: 45px 0px 0px 37px;
 }
 .connected__icon {
@@ -494,9 +485,6 @@ html,body {
 	background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
 }
 .benefits__title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 37px;
 	margin: 75px 0px 0px;
 }
 .benefits__subtitle {
@@ -543,6 +531,11 @@ html,body {
 @media (max-width: 1300px) {
 	.benefits__container {
 		flex-wrap: wrap;
+		background: url(../img/benefits/1.png) no-repeat right top;
+		height: 504px;
+		width: 85.11%;
+		background-size: cover;
+		padding: 0px;
 	}
 	.benefits__left {
 		width: 100%;
@@ -555,14 +548,6 @@ html,body {
 	}
 	.benefits__bg {
 		background: none;
-	}
-	.benefits__container {
-		background: url(../img/benefits/1.png) no-repeat right top;
-		height: 504px;
-		width: 85.11%;
-		position: absolute;
-		background-size: cover;
-		padding: 0px;
 	}
 	.benefits__title {
 		margin: 75px 0px 0px;
@@ -582,7 +567,7 @@ html,body {
 /*----------------SERVICES----------------*/
 .services {
 	height: 670px;
-	margin: 130px 0px;
+	margin: 130px 0px 0px;
 }
 .services__container {
 	display: flex;
@@ -591,13 +576,11 @@ html,body {
 .services__left {
 	display: flex;
 	flex-direction: column;
+	/* position: relative; */
 	height: 670px;
 	width: 50%;
 }
 .services__title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 37px;
 }
 .services__subtitle {
 	font-size: 24px;
@@ -605,33 +588,22 @@ html,body {
 	color: #9B9B9B;
 	margin: 9px 0px 0px;
 }
-.services__coding {
+.services__item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #979797;
+	padding: 0px 0px 25px 0px;
+}
+.coding {
 	margin: 67px 0px 0px;
 }
 .coding__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 }
 .coding__icon {
 	width: 18px;
 	height: 4px;
 }
-.line {
-	content: "";
-	width: 100%;
-	border-top: 1px solid #979797;
-	margin: 25px 0px 0px;
-}
-/* .services__coding::after {
-   content: "";
-	width: 100%;
-	border-top: 1px solid #979797;
-} */
 .coding__content {
 	display: flex;
 	margin: 32px 0px 0px;
@@ -658,35 +630,56 @@ html,body {
 .coding__more:hover {
 	cursor: grab;
 }
-.services__credentialing {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.credentialing {
 	margin: 42px 0px 0px;
 }
 .credentialing__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 }
 .credentialing__icon {
 	width: 18px;
 	height: 18px;
 }
-.services__management {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.management {
 	margin: 31px 0px 0px;
 }
 .management__title {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #0E77AF;
 }
 .management__icon {
 	width: 18px;
 	height: 18px;
+}
+.services__right {
+	display: flex;
+	flex-direction: column;
+	height: 670px;
+	width: 50%;
+	padding: 0px 0px 0px 112px;
+}
+.security__title {
+}
+.security__subtitle {
+	font-size: 24px;
+	line-height: 28px;	
+	color: #9B9B9B;
+	margin: 9px 0px 0px;
+}
+.security__img img {
+	width: 100%;
+	margin: 47px 0px 0px;
+}
+.security__text {
+	font-size: 16px;
+	line-height: 181%;
+	margin: 58px 0px 0px;
+}
+.more__red_security {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 192%;
+	text-align: center;
+	color: #FFFFFF;
+	width: 104px;
+	height: 35px;
+	background: #B4141B;
+	margin: 45px 0px 0px;
 }
