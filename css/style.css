@@ -411,12 +411,12 @@ h3 {
 
 /*-----------------BENEFITS-----------------*/
 .benefits {
-	height: 504px;
+	min-height: 504px;
 	position: relative;
 }
 .benefits__bg {
 	background: url(../img/benefits/1.png) no-repeat right top;
-	height: 504px;
+	min-height: 504px;
 	width: 52.73%;
 	position: absolute;
 	background-size: cover;
@@ -424,10 +424,11 @@ h3 {
 .benefits__container {
 	display: flex;
 	height: 100%;
+	padding: 0px 0px 0px 0px;
 }
 .benefits__left {
 	display: flex;
-	height: 504px;
+	min-height: 504px;
 	width: 53.89%;
 	align-items: center;
 	justify-content: end;
@@ -481,7 +482,7 @@ h3 {
 }
 .benefits__right {
 	width: 46.11%;
-	padding: 0px 0px 0px 65px;
+	padding: 0px 10px 0px 65px;
 	background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
 }
 .benefits__title {
@@ -532,10 +533,10 @@ h3 {
 	.benefits__container {
 		flex-wrap: wrap;
 		background: url(../img/benefits/1.png) no-repeat right top;
-		height: 504px;
+		background-size: 504px cover;
+		min-height: 504px;
 		width: 85.11%;
-		background-size: cover;
-		padding: 0px;
+		padding: 0px 0px 57px 0px;
 	}
 	.benefits__left {
 		width: 100%;
@@ -545,6 +546,7 @@ h3 {
 	}
 	.benefits__right {
 		width: 100%;
+		padding: 0px 0px 57px 65px;
 	}
 	.benefits__bg {
 		background: none;
@@ -682,4 +684,48 @@ h3 {
 	height: 35px;
 	background: #B4141B;
 	margin: 45px 0px 0px;
+}
+@media (max-width: 1300px) {
+	.services {
+		margin: 73px 0px 0px;
+	}
+}
+
+/*-------------TESTIMONIALS--------------*/
+.testimonials {
+	width: 100%;
+	height: 651px;
+	background: #0E77AF;
+}
+.testimonials__container {
+	display: flex;
+	padding: 148px 0px;
+}
+.testimonials__left {
+	width: 37.32%;
+	height: 356px;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+.testimonials__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 37px;
+}
+.testimonials__subtitle {
+}
+.testimonials__data {
+}
+.testimonials__text {
+}
+.testimonials__buttons {
+	display: flex;
+}
+.button__testimonials {
+}
+.testimonials__slash {
+}
+.testimonials__right {
+	width: 62.68%;
 }
