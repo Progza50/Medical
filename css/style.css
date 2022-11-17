@@ -553,7 +553,7 @@ h3 {
 		padding: 0px 35px 57px 65px;
 	}
 	.benefits__bgl {
-		flex: none;
+		display: none;
 	}
 	.benefits__title {
 		margin: 75px 0px 0px;
@@ -562,7 +562,7 @@ h3 {
 		flex: none;
 		top: 504px;
 		left: 15.68%;
-		width: 100%;
+		width: 84.32%;
 		min-height: 422px;
 	}
 }
@@ -728,6 +728,11 @@ h3 {
 		margin: 70px 0px 0px;
 	}
 }
+@media (max-width: 1280px) {
+	.services__container {
+		flex-wrap: wrap;
+	}
+}
 
 /*-------------TESTIMONIALS--------------*/
 .testimonials {
@@ -767,7 +772,7 @@ h3 {
 .testimonials__right {
 	width: 62.68%;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1560px) {
 	.testimonials__container {
 		margin: 100px 0px;
 	}
