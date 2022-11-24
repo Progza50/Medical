@@ -443,27 +443,16 @@ h3 {
 
 /*-----------------BENEFITS-----------------*/
 .benefits {
-	min-height: 504px;
-	position: relative;
-}
-.benefits__bgl {
-	background: url(../img/benefits/1.png) no-repeat right top;
-	min-height: 504px;
-	width: 52.732%;
-	position: absolute;
-	background-size: cover;
-}
-.benefits__container {
 	display: flex;
-	height: 100%;
 }
 .benefits__left {
 	display: flex;
 	min-height: 504px;
-	width: 53.971%;
-	max-width: 632px;
+	width: 52.732%;
 	align-items: center;
 	justify-content: end;
+	background: url(../img/benefits/1.png) no-repeat right top;
+	background-size: cover;
 }
 .benefits__buttons {
 	display: flex;
@@ -483,7 +472,7 @@ h3 {
 	font-size: 22px;
 	line-height: 25px;
 	color: #FFFFFF;
-	padding: 0px 0px 0px 35px;
+	padding: 0px 0px 0px 34px;
 	text-align: left;
 	z-index: 2;
 }
@@ -492,12 +481,17 @@ h3 {
 	color: #000000;
 }
 .benefits__right {
-	width: 46.029%;
-	max-width: 539px;
-	padding: 75px 23px 57px 65px;
+	width: 47.268%;
 	z-index: 2;
+	background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%) no-repeat right top;
+	min-height: 504px;
+	left: 52.732%;
+	top: 0px;
+	background-size: cover;
 }
-.benefits__title {
+.benefits__body {
+	max-width: 516px;
+	padding: 75px 0px 57px 65px;
 }
 .benefits__subtitle {
 	font-size: 24px;
@@ -532,90 +526,61 @@ h3 {
 .more__red:active {
 	background: #720d12;
 }
-.benefits__bgr {
-	background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%) no-repeat right top;
-	min-height: 504px;
-	width: 47.268%;
-	position: absolute;
-	left: 52.732%;
-	top: 0px;
-	background-size: cover;
-}
-@media (max-width: 1441px) {
-	.benefits__title {
-		/* margin: 30px 0px 0px; */
-	}
-}
-@media (max-width: 1353px) {
-	.benefits__container {
+@media (max-width: 1076px) {
+	.benefits {
 		flex-wrap: wrap;
-		min-height: 504px;
-		padding: 0px;
 	}
 	.benefits__left {
 		background: url(../img/benefits/1.png) no-repeat right top;
-		background-size: cover;
+		background-size: cover; 
 		width: 100%;
 		margin: 0px 15px 0px;
 	}
 	.benefits__buttons {
-		width: 54.05%;
+		width: 65%;
+		max-width: none;
+	}
+	.benefits__button {
+		padding: 0px 15px 0px 34px;
 	}
 	.benefits__right {
 		width: 100%;
 		margin: 0px 15px 0px;
-		padding: 0px 35px 57px 65px;
+		padding: 0px;
 	}
-	.benefits__bgl {
-		display: none;
-	}
-	.benefits__title {
-		margin: 75px 0px 0px;
-	}
-	.benefits__bgr {
-		flex: none;
-		top: 504px;
-		left: 15.68%;
-		width: 84.32%;
-		min-height: 422px;
+	.benefits__body {
+		width: 100%;
+		max-width: none;
 	}
 }
-@media (max-width: 1156px) {
-	.benefits__bgr {
-		min-height: 480px;
-	}
+@media (max-width: 900px) {
+	.benefits__body {
+		padding: 75px 15px 57px 65px;
+	}	
 }
 @media (max-width: 780px) {
-	.benefits__bgr {
-		min-height: 509px;
-	}
-	.benefits__buttons {
-		width: 70%;
-	}
-}
-@media (max-width: 722px) {
-	.benefits__bgr {
-		min-height: 538px;
-	}
-}
-@media (max-width: 682px) {
-	.benefits__bgr {
-		min-height: 595px;
-	}
-}
-@media (max-width: 620px) {
 	.benefits__buttons {
 		width: 100%;
 	}
 }
-@media (max-width: 576px) {
-	.benefits__bgr {
-		min-height: 653px;
+@media (max-width: 540px) {
+	.benefits__body {
+		height: 504px;
+		padding: 50px 15px 30px 65px;
 	}
 }
-@media (max-width: 499px) {
-	.benefits__bgr {
-		min-height: 711px;
+@media (max-width: 472px) {
+	.benefits__right {
+		height: 504px;
+	}
+	.benefits__body {
+		height: 100%;
+		padding: 50px 15px 30px 35px;
+	}
+}
+@media (max-width: 437px) {
+	.benefits__right {
+		height: 580px;
 	}
 }
 
