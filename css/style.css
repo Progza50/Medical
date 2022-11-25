@@ -766,17 +766,21 @@ h3 {
 .testimonials {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
-	min-height: 651px;
+	height: 651px;
 	background: #0E77AF;
 	margin: 140px 0px 0px;
 }
 .testimonials__container {
 	display: flex;
+	row-gap: 50px;
+	width: 1201px;
+	height: 356px;
 }
 .testimonials__left {
 	width: 37.32%;
-	height: 356px;
+	min-height: 356px;
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
@@ -785,35 +789,279 @@ h3 {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 37px;
+	margin: 2px 0px 0px 0px;
 }
 .testimonials__subtitle {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 9px 0px 0px 0px;
 }
 .testimonials__data {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 73px;
+	margin: 92px 0px 0px 0px;
 }
 .testimonials__text {
+	font-size: 28px;
+	line-height: 32px;
+	margin: 1px 0px 0px 0px;
 }
 .testimonials__buttons {
 	display: flex;
+	margin: 56px 0px 0px 0px;
 }
 .button__testimonials {
+	width: 59px;
+	font-family: 'Asap';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	color: #FFFFFF;
+	background: inherit;
+}
+.button__testimonials:hover {
+	cursor: grab;
+	background: #083e5c;
 }
 .testimonials__slash {
+	width: 20px;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
 }
 .testimonials__right {
 	width: 62.68%;
+	min-height: 356px;
+	background: #FFFFFF;
 }
-@media (max-width: 1560px) {
-	.testimonials__container {
-		margin: 100px 0px;
-	}
+.testimonials__right_body {
+	padding: 75px 45px 82px 59px;
+}
+.testimonials__right_title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+}
+.testimonials__right_text {
+	font-size: 16px;
+	line-height: 29px;
+	margin: 17px 0px 0px 0px;
+}
+.testimonials__author {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 54px 0px 0px 0px;
 }
 @media (max-width: 1280px) {
-	.testimonials__container {
+	.testimonials {
+		height: 557px;
 		margin: 80px 0px 0px;
 	}
 }
-@media (max-width: 590px) {
-	.testimonials__container {
+@media (max-width: 920px) {
+	.testimonials {
 		margin: 50px 0px 0px;
+	}
+}
+@media (max-width: 852px) {
+	.testimonials__right_body {
+		padding: 45px;
+	}	
+}
+@media (max-width: 700px) {
+	.testimonials {
+		height: 760px;
+	}
+	.testimonials__container {
+		flex-wrap: wrap;
+		width: 100%;
+		min-height: 712px;
+	}
+	.testimonials__left {
+		width: 100%;
+	}
+	.testimonials__title {
+		margin: 20px 0px 0px 0px;
+	}
+	.testimonials__data {
+		margin: 70px 0px 0px 0px;
+	}
+	.testimonials__right {
+		width: 100%;
+		min-height: 310px;
+	}
+}
+@media (max-width: 661px) {
+	.testimonials__right_body {
+		padding: 40px;
+	}
+}
+@media (max-width: 521px) {
+	.testimonials__right_body {
+		padding: 30px 20px;
+	}
+	.testimonials__right_text {
+		margin: 30px 0px 0px 0px;
+	}
+	.testimonials__author {
+		margin: 30px 0px 0px 0px;
+	}
+}
+@media (max-width: 386px) {
+	.testimonials {
+		height: 775px;
+	}
+	.testimonials__right_text {
+		margin: 17px 0px 0px 0px;
+	}
+}
+
+/*--------------------TERMS--------------------*/
+.terms {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 941px;
+}
+.terms__container {
+	display: flex;
+	margin: 125px 0px 0px 0px;
+}
+.terms__left {
+	width: 50%;
+	min-height: 587px;
+}
+.terms__for-hysicians {
+	width: 100%;
+	margin: 54px 0px 0px 0px;
+}
+.terms__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 37px;
+}
+.terms__subtitle {
+	font-size: 24px;
+	line-height: 28px;
+	color: #9B9B9B;
+	margin: 9px 0px 0px 0px;
+}
+.terms__text {
+	font-size: 16px;
+	line-height: 29px;
+	color: #595959;
+	margin: 24px 0px 0px 0px;
+}
+.terms__for-hospitals {
+	width: 100%;
+	margin: 26px 0px 0px 0px;
+}
+.terms__button {	
+	margin: 24px 0px 0px 0px;
+}
+.terms__right {
+	width: 50%;
+	min-height: 587px;
+}
+.form {
+	width: 474px;
+	height: 587px;
+	margin: 0px 0px 0px 111px;
+	padding: 0px 0px 0px 48px;
+	background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%);
+	position: relative;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+.title__right {
+	padding: 54px 0px 0px 0px;
+}
+input {
+   max-width: 388px;
+}
+input[type=text] {
+   padding: 19px 13px 18px 13px;
+   margin: 37px 0px 0px 0px;
+   box-sizing: border-box;
+	background: #FFFFFF;
+	border: 2px solid #E2E2E2;
+}
+input[name=firstname] {
+   margin: 46px 0px 0px 0px;
+}
+input[type=submit] {   
+	width: 104px;
+	height: 35px;
+	background: #B4141B;
+	position: absolute;
+	bottom: 52px;
+	right: 41px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 23px;
+	text-align: center;
+	color: #FFFFFF;
+}
+@media (max-width: 1280px) {
+	.terms__container {
+		margin: 100px 0px 0px 0px;
+	}
+	.form {
+		width: 489px;
+		margin: 0px 0px 0px 91px;
+		padding: 0px 0px 0px 40px;
+	}
+	input {
+		max-width: 415px;
+	}
+	input[type=submit] {
+		bottom: 40px;
+		right: 35px;
+	}
+}
+@media (max-width: 1201px) {
+	.terms__container {
+		flex-wrap: wrap;
+	}
+	.terms__left {
+		width: 100%;
+	}
+	.terms__for-hospitals {
+		margin: 40px 0px 0px 0px;
+	}
+	.terms__right {
+		width: 100%;
+	}
+	.terms__for-hysicians {
+		margin: 0px;
+	}
+	.form {
+		width: 100%;
+		margin: 0px;
+		padding: 0px 40px;
+	}
+	input {
+		max-width: 100%;
+	}
+	input[type=submit] {
+		right: 40px;
+	}
+}
+@media (max-width: 700px) {
+	.terms__container {
+		margin: 70px 0px 0px 0px;
+	}
+}
+@media (max-width: 420px) {
+	.form {
+		padding: 0px 15px;
+	}
+	input[type=submit] {
+		right: 15px;
 	}
 }
