@@ -1027,7 +1027,7 @@ form {
 .footer__body_contacts {
 	display: flex;
 	height: 196px;
-	width: 97.3%;
+	width: calc(100% - 30px);
 	max-width: 1171px;
 	position: absolute;
 	top: -99px;
@@ -1086,6 +1086,13 @@ form {
 .footer__link {
 	line-height: 29px;
 }
+li > a:hover {
+	font-weight: 700;
+}
+li > a:active {
+	border: 2px solid white;
+	border-radius: 5px;
+}
 .list__item {
 	color: #FFFFFF;
 }
@@ -1119,20 +1126,12 @@ form {
 .footer__copyright_text {
 	line-height: 29px;
 }
-@media (max-width: 1120px) {
-	.footer__body_contacts {
-		width: 97%;
-	}
-}
 @media (max-width: 1040px) {
 	.content__footer_text {
 		padding: 0px 15px 0px 0px;
 	}
 }
 @media (max-width: 1000px) {
-	.footer__body_contacts {
-		width: 96.5%;
-	}
 	.links__footer_body {
 		margin: 0px 0px 0px 45px;
 	}
@@ -1141,11 +1140,20 @@ form {
 	}
 }
 @media (max-width: 830px) {
+	.footer {
+		min-height: 608px;
+	}
+	.footer__body {
+		min-height: 500px;
+	}
 	.contacts__footer_card {
 		flex-direction: column;
 	}
 	.contacts__footer_icon {
 		padding: 20px 0px 0px 0px;
+	}
+	.footer__body_content {
+		padding: 200px 0px 0px 0px;
 	}
 	.content__footer_social {
 		display: flex;
@@ -1165,13 +1173,15 @@ form {
 	}
 }
 @media (max-width: 790px) {
+	.footer__body {
+		min-height: 600px;
+	}
 	.footer__body_container {
 		position: none;
 	}
 	.footer__body_contacts {
 		display: flex;
 		flex-direction: column;
-		width: 96%;
 		min-height: 300px;
 		position: none;
 	}
@@ -1194,16 +1204,31 @@ form {
 		margin: 0px;
 	}
 	.footer__body_content {
-		padding: 250px 0px 0px 0px;
+		padding: 260px 0px 0px 0px;
 	}
 }
-/* @media (max-width: 700px) {
-	.footer__body_contacts {
-		width: 95.5%;
+@media (max-width: 700px) {
+	.footer__body_content {
+		flex-wrap: wrap;
+		row-gap: 50px;
+	}
+	.content__footer_about {
+		width: 100%;
+		padding: 0px 0px 0px 45px;
+	}
+	.content__footer_links {
+		width: 100%;
+	}
+	.content__footer_social {
+		width: 100%;
+		padding: 0px 0px 50px 0px;
 	}
 }
-@media (max-width: 600px) {
-	.footer__body_contacts {
-		width: 95%;
+@media (max-width: 400px) {
+	.content__footer_about {
+		padding: 0px;
 	}
-} */
+	.links__footer_body {
+		margin: 0px;
+	}
+}
